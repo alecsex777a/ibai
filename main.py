@@ -69,16 +69,16 @@ async def my_event_handler(m):
     text = f"""
 #Uzuichk
 
-↯ Bin: `{cc[:6]}`
+↯ 𝗕𝗶𝗻: `{cc[:6]}`
 
-↯ Country: `{bin_json['country']['name']} - {bin_json['country']['emoji']}`
-↯ Info: `{bin_json['scheme']} - {bin_json['type']} - {bin_json['brand']}`
-↯ Bank: `{bin_json['bank']['name']}`
+↯ 𝗖𝗼𝘂𝗻𝘁𝗿𝘆: `{bin_json['country']['name']} - {bin_json['country']['emoji']}`
+↯ 𝗜𝗻𝗳𝗼: {bin_json['scheme']} - {bin_json['type']} - {bin_json['brand']}
+↯ 𝗕𝗮𝗻𝗸: `{bin_json['bank']['name']}`
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+↯ 𝗖𝗖: `{cc}|{mes}|{ano}|{cvv}`
+↯ 𝗘𝘅𝘁𝗿𝗮: `{extra}xxxx|{mes}|{ano}|rnd`
 
-↯ CC: `{cc}|{mes}|{ano}|{cvv}`
-↯ Extra: `{extra}xxxx|{mes}|{ano}|xxx`
-
-Owner @Mrsebas013
+𝗢𝘄𝗻𝗲𝗿 @Mrsebas013
 """    
     print(f'{cc}|{mes}|{ano}|{cvv}')
     with open('cards.txt', 'a') as w:
