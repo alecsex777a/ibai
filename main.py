@@ -13,7 +13,7 @@ import random
 from defs import getUrl, getcards, phone
 API_ID =  20597671
 API_HASH = 'e89f2c4056dd402bef8299bce660cbcd'
-SEND_CHAT = -1001883003844
+SEND_CHAT = 
 
 client = TelegramClient('session', API_ID, API_HASH)
 ccs = []
@@ -69,14 +69,13 @@ async def my_event_handler(m):
     text = f"""
 #Uzuichk
 
-↯ 𝗕𝗶𝗻: `{cc[:6]}`
+↯ 𝗕𝗶𝗻: 
 
-↯ 𝗖𝗼𝘂𝗻𝘁𝗿𝘆: `{bin_json['country']['name']} - {bin_json['country']['emoji']}`
-↯ 𝗜𝗻𝗳𝗼: {bin_json['scheme']} - {bin_json['type']} - {bin_json['brand']}
-↯ 𝗕𝗮𝗻𝗸: `{bin_json['bank']['name']}`
+↯ 𝗖𝗼𝘂𝗻𝘁𝗿𝘆: 
+↯ 𝗜𝗻𝗳𝗼:
+↯ 𝗕𝗮𝗻𝗸: 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-↯ 𝗖𝗖: `{cc}|{mes}|{ano}|{cvv}`
-↯ 𝗘𝘅𝘁𝗿𝗮: `{extra}xxxx|{mes}|{ano}|rnd`
+↯ 𝗖𝗖: `{cc}|{mes}|{ano}|{cvv}``
 
 𝗢𝘄𝗻𝗲𝗿 @Mrsebas013
 """    
