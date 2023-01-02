@@ -21,22 +21,22 @@ ccs = []
 chats  = [
     # '@fullcuentasgratis','
     '@nexon_community',
-    '@SitesYCCS',
-    '@ddrbinscc',
-    '@LiveCCFam',
-    '@i_DropCCs',
-    '@CcsTeamUrban1',
-    '@Live_Credit_Card',
-    '@fullccshack',
-    '@CCsfreehere',
-    '@TeamBlckCard',
-    '@onyxlivesempire',
-    '@ItachiBins',
-    '@alvkslspqpqpqoqqq',
-    '@CCAUTH',                                                            '@TEST123ND',
-    '@LOYOAS',
-    '@cclivesblackeagle',
-    '@netflix_gratuit_1'
+    '@SitesYCCS',
+    '@ddrbinscc',
+    '@LiveCCFam',
+    '@i_DropCCs',
+    '@CcsTeamUrban1',
+    '@Live_Credit_Card',
+    '@fullccshack',
+    '@CCsfreehere',
+    '@TeamBlckCard',
+    '@onyxlivesempire',
+    '@ItachiBins',
+    '@alvkslspqpqpqoqqq',
+    '@CCAUTH',                                                            '@TEST123ND',
+    '@LOYOAS',
+    '@cclivesblackeagle',
+    '@netflix_gratuit_1'
        
 ]
 
