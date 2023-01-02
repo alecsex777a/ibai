@@ -13,21 +13,30 @@ import random
 from defs import getUrl, getcards, phone
 API_ID =  20597671
 API_HASH = 'e89f2c4056dd402bef8299bce660cbcd'
-SEND_CHAT = 
+SEND_CHAT = -1001538283887
 
 client = TelegramClient('session', API_ID, API_HASH)
 ccs = []
 
 chats  = [
     # '@fullcuentasgratis','
-    '@fbinschat',
-    '@GodsOfTheBins',
-    '@FMVTZDCHATT',
-    '@cardesclub',
-    '@secretgroup01',
-    '@BinsHellChat',
-    '@Venexchk',
-    '@TeamVTXCHAT'
+    '@nexon_community',
+    '@SitesYCCS',
+    '@ddrbinscc',
+    '@LiveCCFam',
+    '@i_DropCCs',
+    '@CcsTeamUrban1',
+    '@Live_Credit_Card',
+    '@fullccshack',
+    '@CCsfreehere',
+    '@TeamBlckCard',
+    '@onyxlivesempire',
+    '@ItachiBins',
+    '@alvkslspqpqpqoqqq',
+    '@CCAUTH',                                                            '@TEST123ND',
+    '@LOYOAS',
+    '@cclivesblackeagle',
+    '@netflix_gratuit_1'
        
 ]
 
@@ -60,24 +69,31 @@ async def my_event_handler(m):
         return
     ccs.append(cc)
     extra = cc[0:0+12]
-    bin = requests.get(f'https://lookup.binlist.net/{cc[:6]}')
+    bin = requests.get(f'https://www.binapi.co.uk/bin={cc[:6]}')
     if not bin:
         return
     bin_json =  bin.json()
     addr = real_random_address()
     fullinfo = f"{cc}|{mes}|{ano}|{cvv}|{names.get_full_name()}|{addr['address1']}|{addr['city']}|{addr['state']}|{addr['postalCode']}|{phone()}|dob: {datetime.strftime(datetime(random.randint(1960, 2005), random.randint(1, 12),random.randint(1, 28), ), '%Y-%m-%d')}|United States Of America"
     text = f"""
-#Uzuichk
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+             **点 𝙸𝚋𝚊𝚒 𝚂𝚌𝚛𝚊𝚙𝚙𝚎𝚛 点**
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬                                     
+**Card** ➪ `{cc}|{mes}|{ano}|{cvv}`
 
-↯ 𝗕𝗶𝗻: 
+**Status ➪ Approved! ✅**
 
-↯ 𝗖𝗼𝘂𝗻𝘁𝗿𝘆: 
-↯ 𝗜𝗻𝗳𝗼:
-↯ 𝗕𝗮𝗻𝗸: 
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-↯ 𝗖𝗖: `{cc}|{mes}|{ano}|{cvv}``
+— — — — — — — — — — — — — — —
+               **☘ INFO CARD ☘**
+— — — — — — — — — — — — — — —
 
-𝗢𝘄𝗻𝗲𝗿 @Mrsebas013
+[🝂] 𝘽𝙞𝙣 𝗜𝗻𝗳𝗼 - `{cc[:6]}`
+[🝂] **𝗜𝗻𝗳𝗼 - `{bin_json['brand']} - {bin_json['type']} - {bin_json['level']}**`
+[🝂] 𝘽𝙖𝙣𝙠 - `{bin_json['bank']}`
+[🝂] 𝘾𝙤𝙪𝙣𝙩𝙧𝙮 - `{bin_json['country']} - {bin_json['code']} - {bin_json['flag']}`
+━━━━━━━━━━━━━━━━
+[🝂] 𝗘𝘅𝘁𝗿𝗮 `{extra}xxxx|{mes}|{ano}|rnd`
+━━━━━━━━━━━━━━━━
 """    
     print(f'{cc}|{mes}|{ano}|{cvv}')
     with open('cards.txt', 'a') as w:
